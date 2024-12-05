@@ -1,0 +1,94 @@
+Starting at epoch 0. LR=0.001
+
+Checkpoint Path: balloon20241204T1638/mask_rcnn_balloon_{epoch:04d}.h5
+Selecting layers to train
+fpn_c5p5               (Conv2D)
+fpn_c4p4               (Conv2D)
+fpn_c3p3               (Conv2D)
+fpn_c2p2               (Conv2D)
+fpn_p5                 (Conv2D)
+fpn_p2                 (Conv2D)
+fpn_p3                 (Conv2D)
+fpn_p4                 (Conv2D)
+rpn_model              (Functional)
+mrcnn_mask_conv1       (TimeDistributed)
+mrcnn_mask_bn1         (TimeDistributed)
+mrcnn_mask_conv2       (TimeDistributed)
+mrcnn_mask_bn2         (TimeDistributed)
+mrcnn_class_conv1      (TimeDistributed)
+mrcnn_class_bn1        (TimeDistributed)
+mrcnn_mask_conv3       (TimeDistributed)
+mrcnn_mask_bn3         (TimeDistributed)
+mrcnn_class_conv2      (TimeDistributed)
+mrcnn_class_bn2        (TimeDistributed)
+mrcnn_mask_conv4       (TimeDistributed)
+mrcnn_mask_bn4         (TimeDistributed)
+mrcnn_bbox_fc          (TimeDistributed)
+mrcnn_mask_deconv      (TimeDistributed)
+mrcnn_class_logits     (TimeDistributed)
+mrcnn_mask             (TimeDistributed)
+/usr/local/lib/python3.10/dist-packages/keras/optimizers/optimizer_v2/gradient_descent.py:108: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super(SGD, self).__init__(name, **kwargs)
+Epoch 1/20
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/sub:0", shape=(None,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/GatherV2_2:0", shape=(None, 7, 7, 256), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/Shape:0", shape=(4,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/sub_1:0", shape=(None,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/GatherV2_5:0", shape=(None, 7, 7, 256), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/Shape_1:0", shape=(4,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/sub_2:0", shape=(None,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/GatherV2_8:0", shape=(None, 7, 7, 256), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/Shape_2:0", shape=(4,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/sub_3:0", shape=(None,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/GatherV2_11:0", shape=(None, 7, 7, 256), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/roi_align_classifier/concat_grad/Shape_3:0", shape=(4,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/sub:0", shape=(None,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/GatherV2_2:0", shape=(None, 14, 14, 256), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/Shape:0", shape=(4,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/sub_1:0", shape=(None,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/GatherV2_5:0", shape=(None, 14, 14, 256), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/Shape_1:0", shape=(4,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/sub_2:0", shape=(None,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/GatherV2_8:0", shape=(None, 14, 14, 256), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/Shape_2:0", shape=(4,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/sub_3:0", shape=(None,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/GatherV2_11:0", shape=(None, 14, 14, 256), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/roi_align_mask/concat_grad/Shape_3:0", shape=(4,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/ROI/GatherV2_2_grad/Reshape_1:0", shape=(6000,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/ROI/GatherV2_2_grad/Reshape:0", shape=(6000, 4), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/ROI/GatherV2_2_grad/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/tensorflow/python/framework/indexed_slices.py:444: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("training/SGD/gradients/gradients/ROI/GatherV2_3_grad/Reshape_1:0", shape=(6000,), dtype=int32), values=Tensor("training/SGD/gradients/gradients/ROI/GatherV2_3_grad/Reshape:0", shape=(6000, 4), dtype=float32), dense_shape=Tensor("training/SGD/gradients/gradients/ROI/GatherV2_3_grad/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+208/208 [==============================] - ETA: 0s - batch: 103.5000 - size: 2.0000 - loss: 0.5918 - rpn_class_loss: 0.0222 - rpn_bbox_loss: 0.1387 - mrcnn_class_loss: 0.0671 - mrcnn_bbox_loss: 0.1865 - mrcnn_mask_loss: 0.1772/usr/local/lib/python3.10/dist-packages/keras/engine/training_v1.py:2045: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  updates = self.state_updates
+208/208 [==============================] - 987s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.5918 - rpn_class_loss: 0.0222 - rpn_bbox_loss: 0.1387 - mrcnn_class_loss: 0.0671 - mrcnn_bbox_loss: 0.1865 - mrcnn_mask_loss: 0.1772 - val_loss: 0.6773 - val_rpn_class_loss: 0.0270 - val_rpn_bbox_loss: 0.2751 - val_mrcnn_class_loss: 0.0312 - val_mrcnn_bbox_loss: 0.2199 - val_mrcnn_mask_loss: 0.1241
+Epoch 2/20
+208/208 [==============================] - 939s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.3304 - rpn_class_loss: 0.0103 - rpn_bbox_loss: 0.0842 - mrcnn_class_loss: 0.0405 - mrcnn_bbox_loss: 0.0865 - mrcnn_mask_loss: 0.1089 - val_loss: 0.6586 - val_rpn_class_loss: 0.0240 - val_rpn_bbox_loss: 0.2778 - val_mrcnn_class_loss: 0.0488 - val_mrcnn_bbox_loss: 0.1394 - val_mrcnn_mask_loss: 0.1686
+Epoch 3/20
+208/208 [==============================] - 945s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.2093 - rpn_class_loss: 0.0074 - rpn_bbox_loss: 0.0461 - mrcnn_class_loss: 0.0311 - mrcnn_bbox_loss: 0.0472 - mrcnn_mask_loss: 0.0774 - val_loss: 0.6211 - val_rpn_class_loss: 0.0236 - val_rpn_bbox_loss: 0.2667 - val_mrcnn_class_loss: 0.0329 - val_mrcnn_bbox_loss: 0.1517 - val_mrcnn_mask_loss: 0.1461
+Epoch 4/20
+208/208 [==============================] - 946s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.1578 - rpn_class_loss: 0.0048 - rpn_bbox_loss: 0.0353 - mrcnn_class_loss: 0.0159 - mrcnn_bbox_loss: 0.0349 - mrcnn_mask_loss: 0.0669 - val_loss: 0.5799 - val_rpn_class_loss: 0.0226 - val_rpn_bbox_loss: 0.1866 - val_mrcnn_class_loss: 0.0663 - val_mrcnn_bbox_loss: 0.1226 - val_mrcnn_mask_loss: 0.1817
+Epoch 5/20
+208/208 [==============================] - 951s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.1100 - rpn_class_loss: 0.0030 - rpn_bbox_loss: 0.0170 - mrcnn_class_loss: 0.0149 - mrcnn_bbox_loss: 0.0202 - mrcnn_mask_loss: 0.0549 - val_loss: 0.5581 - val_rpn_class_loss: 0.0229 - val_rpn_bbox_loss: 0.2052 - val_mrcnn_class_loss: 0.0710 - val_mrcnn_bbox_loss: 0.1185 - val_mrcnn_mask_loss: 0.1406
+Epoch 6/20
+208/208 [==============================] - 949s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0971 - rpn_class_loss: 0.0022 - rpn_bbox_loss: 0.0196 - mrcnn_class_loss: 0.0108 - mrcnn_bbox_loss: 0.0180 - mrcnn_mask_loss: 0.0464 - val_loss: 0.5483 - val_rpn_class_loss: 0.0209 - val_rpn_bbox_loss: 0.1983 - val_mrcnn_class_loss: 0.0624 - val_mrcnn_bbox_loss: 0.0997 - val_mrcnn_mask_loss: 0.1670
+Epoch 7/20
+208/208 [==============================] - 950s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0716 - rpn_class_loss: 0.0019 - rpn_bbox_loss: 0.0104 - mrcnn_class_loss: 0.0078 - mrcnn_bbox_loss: 0.0110 - mrcnn_mask_loss: 0.0405 - val_loss: 0.5946 - val_rpn_class_loss: 0.0242 - val_rpn_bbox_loss: 0.2050 - val_mrcnn_class_loss: 0.0827 - val_mrcnn_bbox_loss: 0.1023 - val_mrcnn_mask_loss: 0.1804
+Epoch 8/20
+208/208 [==============================] - 949s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0668 - rpn_class_loss: 0.0014 - rpn_bbox_loss: 0.0108 - mrcnn_class_loss: 0.0064 - mrcnn_bbox_loss: 0.0086 - mrcnn_mask_loss: 0.0396 - val_loss: 0.6111 - val_rpn_class_loss: 0.0245 - val_rpn_bbox_loss: 0.2147 - val_mrcnn_class_loss: 0.1192 - val_mrcnn_bbox_loss: 0.0958 - val_mrcnn_mask_loss: 0.1570
+Epoch 9/20
+208/208 [==============================] - 945s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0667 - rpn_class_loss: 0.0013 - rpn_bbox_loss: 0.0121 - mrcnn_class_loss: 0.0072 - mrcnn_bbox_loss: 0.0088 - mrcnn_mask_loss: 0.0373 - val_loss: 0.6866 - val_rpn_class_loss: 0.0233 - val_rpn_bbox_loss: 0.2211 - val_mrcnn_class_loss: 0.1247 - val_mrcnn_bbox_loss: 0.1212 - val_mrcnn_mask_loss: 0.1963
+Epoch 10/20
+208/208 [==============================] - 945s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0643 - rpn_class_loss: 0.0012 - rpn_bbox_loss: 0.0121 - mrcnn_class_loss: 0.0053 - mrcnn_bbox_loss: 0.0086 - mrcnn_mask_loss: 0.0372 - val_loss: 0.6456 - val_rpn_class_loss: 0.0248 - val_rpn_bbox_loss: 0.2139 - val_mrcnn_class_loss: 0.1376 - val_mrcnn_bbox_loss: 0.1059 - val_mrcnn_mask_loss: 0.1634
+Epoch 11/20
+208/208 [==============================] - 941s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0601 - rpn_class_loss: 0.0010 - rpn_bbox_loss: 0.0101 - mrcnn_class_loss: 0.0046 - mrcnn_bbox_loss: 0.0077 - mrcnn_mask_loss: 0.0367 - val_loss: 0.7035 - val_rpn_class_loss: 0.0252 - val_rpn_bbox_loss: 0.2049 - val_mrcnn_class_loss: 0.1586 - val_mrcnn_bbox_loss: 0.1102 - val_mrcnn_mask_loss: 0.2045
+Epoch 12/20
+208/208 [==============================] - 943s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0625 - rpn_class_loss: 0.0010 - rpn_bbox_loss: 0.0117 - mrcnn_class_loss: 0.0050 - mrcnn_bbox_loss: 0.0081 - mrcnn_mask_loss: 0.0366 - val_loss: 0.6529 - val_rpn_class_loss: 0.0265 - val_rpn_bbox_loss: 0.1984 - val_mrcnn_class_loss: 0.1613 - val_mrcnn_bbox_loss: 0.1005 - val_mrcnn_mask_loss: 0.1662
+Epoch 13/20
+208/208 [==============================] - 940s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0579 - rpn_class_loss: 9.5712e-04 - rpn_bbox_loss: 0.0096 - mrcnn_class_loss: 0.0043 - mrcnn_bbox_loss: 0.0076 - mrcnn_mask_loss: 0.0354 - val_loss: 0.6426 - val_rpn_class_loss: 0.0272 - val_rpn_bbox_loss: 0.1830 - val_mrcnn_class_loss: 0.1606 - val_mrcnn_bbox_loss: 0.1000 - val_mrcnn_mask_loss: 0.1718
+Epoch 14/20
+208/208 [==============================] - 941s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0525 - rpn_class_loss: 7.2594e-04 - rpn_bbox_loss: 0.0077 - mrcnn_class_loss: 0.0044 - mrcnn_bbox_loss: 0.0065 - mrcnn_mask_loss: 0.0332 - val_loss: 0.6464 - val_rpn_class_loss: 0.0269 - val_rpn_bbox_loss: 0.1948 - val_mrcnn_class_loss: 0.1344 - val_mrcnn_bbox_loss: 0.1071 - val_mrcnn_mask_loss: 0.1832
+Epoch 15/20
+208/208 [==============================] - 942s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0497 - rpn_class_loss: 7.2241e-04 - rpn_bbox_loss: 0.0070 - mrcnn_class_loss: 0.0038 - mrcnn_bbox_loss: 0.0057 - mrcnn_mask_loss: 0.0324 - val_loss: 0.7225 - val_rpn_class_loss: 0.0270 - val_rpn_bbox_loss: 0.2104 - val_mrcnn_class_loss: 0.1745 - val_mrcnn_bbox_loss: 0.1140 - val_mrcnn_mask_loss: 0.1964
+Epoch 16/20
+208/208 [==============================] - 944s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0513 - rpn_class_loss: 6.8237e-04 - rpn_bbox_loss: 0.0084 - mrcnn_class_loss: 0.0036 - mrcnn_bbox_loss: 0.0062 - mrcnn_mask_loss: 0.0324 - val_loss: 0.7627 - val_rpn_class_loss: 0.0273 - val_rpn_bbox_loss: 0.2176 - val_mrcnn_class_loss: 0.1684 - val_mrcnn_bbox_loss: 0.1150 - val_mrcnn_mask_loss: 0.2343
+Epoch 17/20
+208/208 [==============================] - 943s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0496 - rpn_class_loss: 6.5327e-04 - rpn_bbox_loss: 0.0077 - mrcnn_class_loss: 0.0030 - mrcnn_bbox_loss: 0.0058 - mrcnn_mask_loss: 0.0325 - val_loss: 0.6479 - val_rpn_class_loss: 0.0272 - val_rpn_bbox_loss: 0.2033 - val_mrcnn_class_loss: 0.1552 - val_mrcnn_bbox_loss: 0.0951 - val_mrcnn_mask_loss: 0.1671
+Epoch 18/20
+208/208 [==============================] - 943s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0470 - rpn_class_loss: 5.5000e-04 - rpn_bbox_loss: 0.0055 - mrcnn_class_loss: 0.0035 - mrcnn_bbox_loss: 0.0051 - mrcnn_mask_loss: 0.0324 - val_loss: 0.6756 - val_rpn_class_loss: 0.0265 - val_rpn_bbox_loss: 0.1992 - val_mrcnn_class_loss: 0.1563 - val_mrcnn_bbox_loss: 0.1117 - val_mrcnn_mask_loss: 0.1819
+Epoch 19/20
+208/208 [==============================] - 946s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0455 - rpn_class_loss: 5.4946e-04 - rpn_bbox_loss: 0.0051 - mrcnn_class_loss: 0.0032 - mrcnn_bbox_loss: 0.0053 - mrcnn_mask_loss: 0.0313 - val_loss: 0.6455 - val_rpn_class_loss: 0.0257 - val_rpn_bbox_loss: 0.2076 - val_mrcnn_class_loss: 0.1481 - val_mrcnn_bbox_loss: 0.0873 - val_mrcnn_mask_loss: 0.1767
+Epoch 20/20
+208/208 [==============================] - 943s 5s/step - batch: 103.5000 - size: 2.0000 - loss: 0.0440 - rpn_class_loss: 4.6724e-04 - rpn_bbox_loss: 0.0041 - mrcnn_class_loss: 0.0035 - mrcnn_bbox_loss: 0.0049 - mrcnn_mask_loss: 0.0311 - val_loss: 0.7312 - val_rpn_class_loss: 0.0258 - val_rpn_bbox_loss: 0.2133 - val_mrcnn_class_loss: 0.1430 - val_mrcnn_bbox_loss: 0.0902 - val_mrcnn_mask_loss: 0.2588
+315.75 minutos
